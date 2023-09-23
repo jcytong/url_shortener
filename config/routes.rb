@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   
-  root 'links#index'
 
   resources :links
-  get ':short_url', to: 'links#redirect', as: :short
+  resources :views, path: :v, only: [:show]
+  root 'links#index'
 end
