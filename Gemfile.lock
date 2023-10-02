@@ -244,7 +244,7 @@ DEPENDENCIES
   chartkick
   debug
   devise (~> 4.9)
-  groupdate
+  groupdate (~> 6.3)
   importmap-rails
   jbuilder
   pg (~> 1.1)
