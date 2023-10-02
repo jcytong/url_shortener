@@ -241,7 +241,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   capybara
-  chartkick
+  chartkick (~> 5.0)
   debug
   devise (~> 4.9)
   groupdate (~> 6.3)
