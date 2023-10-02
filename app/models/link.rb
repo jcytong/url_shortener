@@ -1,6 +1,9 @@
 class Link < ApplicationRecord
   has_many :views, dependent: :destroy
+  
+  belongs_to :user, optional: true
   scope :recent_first, -> { order(created_at: :desc) }
+  scope :anon_link, -> { where(user: nil) }
 
   validates :url, presence: true
 
@@ -18,5 +21,9 @@ class Link < ApplicationRecord
 
   def domain
     URI(url).host
+  end
+
+  def editable?
+    !user.nil?
   end
 end
