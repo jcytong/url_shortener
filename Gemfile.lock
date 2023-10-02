@@ -244,11 +244,7 @@ DEPENDENCIES
   chartkick (~> 5.0)
   debug
   devise (~> 4.9)
-<<<<<<< HEAD
-  groupdate
-=======
   groupdate (~> 6.3)
->>>>>>> 7e864ef (Add users and edit permissions)
   importmap-rails
   jbuilder
   pg (~> 1.1)
