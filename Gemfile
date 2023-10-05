@@ -80,3 +80,5 @@ gem "groupdate", "~> 6.3"
 gem "sucker_punch", "~> 3.1"
 
 gem "devise", "~> 4.9"
+
+gem "pagy", "~> 6.1"
